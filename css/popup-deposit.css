@@ -1128,6 +1128,10 @@
   margin-bottom: 10px;
   font-family: "Rubik_7b81", Arial;
 }
+.page-select-nested {
+  background: #fff;
+  color: #000000bf;
+}
 .page-select span {
   margin-left: auto;
   transform: rotate(90deg);
@@ -1142,10 +1146,28 @@
   margin-right: 10px;
   border-right: 1px solid #333946;
   font-size: 15px;
+  border-right: none;
 }
 .page-select-img img {
   max-width: 22px;
   max-height: 22px;
   object-fit: cover;
   aspect-ratio: 1 / 1;
+}
+.page-select-img-nested {
+  background: #e5e5e5;
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-select-img-nested img {
+  object-fit: cover;
+  max-width: 18px;
+  max-height: 18px;
+  aspect-ratio: 1 / 1;
+  width: 100%;
 }
