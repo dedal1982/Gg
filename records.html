@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Records</title>
+  </head>
+  <body class="page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="header__inner">
+            <img class="logo" src="img/logo.svg" alt="лого" />
+            <ul class="header__list">
+              <li>
+                <img src="img/Vector.svg" alt="icon" />
+                <a href="#">Главная</a>
+              </li>
+              <li>
+                <img src="img/Vector (1).svg" alt="icon" />
+                <a href="#">Бонусы</a>
+              </li>
+              <li>
+                <img src="img/Vector(2).svg" alt="icon" />
+                <a href="#">Партнерка</a>
+              </li>
+              <li>
+                <a href="#"><img src="img/Vector(3).svg" alt="icon" /></a>
+                <a href="#">F.A.Q.</a>
+              </li>
+              <li>
+                <img src="img/Vector(4).svg" alt="icon" />
+                <a href="#">Поддержка</a>
+              </li>
+              <li class="nav-search">
+                <input class="input-search" type="text" placeholder="Поиск" />
+                <img src="img/search.svg" alt="search" />
+              </li>
+            </ul>
+            <div class="header__item-btn">
+              <a href="#">
+                <img
+                  class="chat__send-wrap-img"
+                  src="img/Vector(5).svg"
+                  alt="иконка"
+                />
+              </a>
+              <button class="header__in-button">Войти</button>
+            </div>
+            <div class="header__burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="mobile-menu">
+        <div class="mobile-menu-inner">
+          <ul class="mobile-list">
+            <li>
+              <a class="link-mobile" href="">Главная</a>
+            </li>
+            <li>
+              <a class="link-mobile" href="#">Бонусы</a>
+            </li>
+            <li>
+              <a class="link-mobile" href="">Партнерка</a>
+            </li>
+            <li>
+              <a class="link-mobile" href="#">FAQ</a>
+            </li>
+            <li>
+              <a class="link-mobile" href="#">Поддержка</a>
+            </li>
+            <li class="nav-search-mobile">
+              <input class="input-search" type="text" placeholder="Поиск" />
+              <img src="img/search.svg" alt="search" />
+            </li>
+            <li>
+              <button class="header__in-button-mob">Войти</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <main class="content">
+        <div class="win-table-mw">
+          <div class="win-table-mobile">
+            <article>
+              <div class="win__section">
+                <h3>Выигрыши</h3>
+                <div class="win-text">
+                  <div class="win-text-top">
+                    <p data-tab="tab-1" class="tab-button tab-active">Все</p>
+                    <p data-tab="tab-2" class="tab-button">ТОП-недели</p>
+                    <p data-tab="tab-3" class="tab-button">ТОП-месяца</p>
+                  </div>
+
+                  <div class="win-text__buttons">
+                    <a href="#" id="button-prev"
+                      ><img src="img/Vector (2).svg" alt="prev"
+                    /></a>
+                    <a href="#" id="button-next"
+                      ><img src="img/Vector (33).svg" alt="next"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <div class="winnings__section">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="tr-left">Игрок</th>
+                    <th class="tr-left">Игра</th>
+                    <th class="tr-left">Ставка</th>
+                    <th class="tr-left">Коэффициент</th>
+                    <th class="tr-left">Выигрыш</th>
+                  </tr>
+                </thead>
+                <tbody id="tab-1" class="tabs-content">
+                  <tr>
+                    <th>
+                      <div class="tab-content__prof">
+                        <img
+                          class="tab-content__img"
+                          src="img/img.png"
+                          alt="аватар"
+                        />
+                        <p class="tab-content__name">Kenneth Collins</p>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="lots lots1">Slots</div>
+                    </th>
+                    <th>
+                      <div class="tab-content__count">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                    <th>
+                      <p class="tab-content__kaf">0.00x</p>
+                    </th>
+                    <th>
+                      <div class="tab-content__count tab-content__count2">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="tab-content__prof">
+                        <img
+                          class="tab-content__img"
+                          src="img/img.png"
+                          alt="аватар"
+                        />
+                        <p class="tab-content__name">Kenneth Collins</p>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="lots lots2">Crazy shoot</div>
+                    </th>
+                    <th>
+                      <div class="tab-content__count">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                    <th>
+                      <p class="tab-content__kaf">0.00x</p>
+                    </th>
+                    <th>
+                      <div class="tab-content__count tab-content__count2">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="tab-content__prof">
+                        <img
+                          class="tab-content__img"
+                          src="img/img.png"
+                          alt="аватар"
+                        />
+                        <p class="tab-content__name">Kenneth Collins</p>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="lots lots3">x100</div>
+                    </th>
+                    <th>
+                      <div class="tab-content__count">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                    <th>
+                      <p class="tab-content__kaf">0.00x</p>
+                    </th>
+                    <th>
+                      <div class="tab-content__count tab-content__count2">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="tab-content__prof">
+                        <img
+                          class="tab-content__img"
+                          src="img/img.png"
+                          alt="аватар"
+                        />
+                        <p class="tab-content__name">Kenneth Collins</p>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="lots lots4">x30</div>
+                    </th>
+                    <th>
+                      <div class="tab-content__count">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                    <th>
+                      <p class="tab-content__kaf">0.00x</p>
+                    </th>
+                    <th>
+                      <div class="tab-content__count tab-content__count2">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="tab-content__prof">
+                        <img
+                          class="tab-content__img"
+                          src="img/img.png"
+                          alt="аватар"
+                        />
+                        <p class="tab-content__name">Kenneth Collins</p>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="lots lots3">Mines</div>
+                    </th>
+                    <th>
+                      <div class="tab-content__count">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                    <th>
+                      <p class="tab-content__kaf">0.00x</p>
+                    </th>
+                    <th>
+                      <div class="tab-content__count tab-content__count2">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="tab-content__prof">
+                        <img
+                          class="tab-content__img"
+                          src="img/img.png"
+                          alt="аватар"
+                        />
+                        <p class="tab-content__name">Kenneth Collins</p>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="lots lots1">Crash</div>
+                    </th>
+                    <th>
+                      <div class="tab-content__count">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                    <th>
+                      <p class="tab-content__kaf">0.00x</p>
+                    </th>
+                    <th>
+                      <div class="tab-content__count tab-content__count2">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="tab-content__prof">
+                        <img
+                          class="tab-content__img"
+                          src="img/img.png"
+                          alt="аватар"
+                        />
+                        <p class="tab-content__name">Kenneth Collins</p>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="lots lots2">Keno</div>
+                    </th>
+                    <th>
+                      <div class="tab-content__count">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                    <th>
+                      <p class="tab-content__kaf">0.00x</p>
+                    </th>
+                    <th>
+                      <div class="tab-content__count tab-content__count2">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                  </tr>
+                </tbody>
+                <tbody id="tab-2" class="tabs-content tab-hidden">
+                  <tr>
+                    <th>
+                      <div class="tab-content__prof">
+                        <img
+                          class="tab-content__img"
+                          src="img/img.png"
+                          alt="аватар"
+                        />
+                        <p class="tab-content__name">Kenneth Collins</p>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="lots lots1">Slots</div>
+                    </th>
+                    <th>
+                      <div class="tab-content__count">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                    <th>
+                      <p class="tab-content__kaf">0.00x</p>
+                    </th>
+                    <th>
+                      <div class="tab-content__count tab-content__count2">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="tab-content__prof">
+                        <img
+                          class="tab-content__img"
+                          src="img/img.png"
+                          alt="аватар"
+                        />
+                        <p class="tab-content__name">Kenneth Collins</p>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="lots lots2">Crazy shoot</div>
+                    </th>
+                    <th>
+                      <div class="tab-content__count">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                    <th>
+                      <p class="tab-content__kaf">0.00x</p>
+                    </th>
+                    <th>
+                      <div class="tab-content__count tab-content__count2">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                  </tr>
+                </tbody>
+                <tbody id="tab-3" class="tabs-content tab-hidden">
+                  <tr>
+                    <th>
+                      <div class="tab-content__prof">
+                        <img
+                          class="tab-content__img"
+                          src="img/img.png"
+                          alt="аватар"
+                        />
+                        <p class="tab-content__name">Kenneth Collins</p>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="lots lots1">Slots</div>
+                    </th>
+                    <th>
+                      <div class="tab-content__count">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                    <th>
+                      <p class="tab-content__kaf">0.00x</p>
+                    </th>
+                    <th>
+                      <div class="tab-content__count tab-content__count2">
+                        <p>56</p>
+                        <img src="img/money.svg" alt="money" />
+                      </div>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <ul>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Соглашение</a>
+            </li>
+            <li>
+              <a href="#">Политика конфиденциальности</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p>социальные сети</p>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/telegram.svg" alt="telegram" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/vk.svg" alt="vk" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <section class="nav-down">
+        <ul>
+          <li>
+            <a href="level.html">уровень</a>
+          </li>
+          <li>
+            <a href="chat.html">чат</a>
+          </li>
+          <li>
+            <a href="">рекорды</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
