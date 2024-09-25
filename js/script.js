@@ -412,16 +412,6 @@ if (telNested) {
   });
 }
 
-// if (cryptoNested) {
-//   cryptoNested.addEventListener("click", () => {
-//     if (listNested.closest(".active")) {
-//       listNested.classList.remove("active");
-//     } else {
-//       cryptoNested.classList.add("active");
-//       pageTelNested.classList.remove("active");
-//     }
-//   });
-// }
 const selectWithdraw = document.querySelector(".page-select-withdraw");
 const listNestedWithdraw = document.querySelector(".list-nested-withdraw");
 const pageSelectArrowWithdraw = document.querySelector(
@@ -446,5 +436,22 @@ if (selectNestedW) {
       nextTextW.textContent = item.textContent;
       listNestedWithdraw.classList.toggle("active");
     });
+  });
+}
+
+//открываем попап
+const replenishBtnPopup = document.querySelector(".replenish-btn");
+const popupDeposit = document.querySelector(".popup-deposit");
+const popupDepositClose = document.querySelector(".popup-deposit__close");
+
+if (replenishBtnPopup) {
+  replenishBtnPopup.addEventListener("click", () => {
+    popupDeposit.classList.add("active");
+  });
+}
+
+if (popupDepositClose) {
+  popupDepositClose.addEventListener("click", () => {
+    popupDeposit.classList.remove("active");
   });
 }

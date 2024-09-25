@@ -1,5 +1,5 @@
 .popup-deposit {
-  display: flex;
+  display: none;
   position: fixed;
   z-index: 999;
   left: 0;
@@ -9,6 +9,9 @@
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 99999;
+}
+.popup-deposit.active {
+  display: flex;
 }
 .popup-deposit__wrapper {
   position: absolute;
