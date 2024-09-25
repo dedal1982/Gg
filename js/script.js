@@ -381,6 +381,8 @@ if (selectNested) {
       nextImg.src = item.querySelector(".prev-img").src;
       nextText.textContent = item.textContent;
       listNested.classList.toggle("active");
+      cryptoNestedPage.classList.remove("active");
+      pageAllNestedPage.classList.add("active");
     });
   });
 }
@@ -402,6 +404,8 @@ if (pageSelectBtn) {
 const telNested = document.getElementById("tel-nested");
 const pageTelNested = document.querySelector(".page-telegram");
 const cryptoNested = document.getElementById("crypto-nested");
+const cryptoNestedPage = document.querySelector(".page-crypto");
+const pageAllNestedPage = document.querySelector(".page-all-bank");
 
 if (telNested) {
   telNested.addEventListener("click", () => {
@@ -409,6 +413,13 @@ if (telNested) {
       listNested.classList.remove("active");
       pageTelNested.classList.add("active");
     }
+  });
+}
+
+if (cryptoNested) {
+  cryptoNested.addEventListener("click", () => {
+    pageAllNestedPage.classList.remove("active");
+    cryptoNestedPage.classList.add("active");
   });
 }
 
