@@ -1118,3 +1118,11 @@
     color: #fff;
   }
 }
+@media screen and (max-width: 767px) {
+  .withdraw-amount-inputs input {
+    font-size: 13px;
+  }
+  .history-empty-inner {
+    font-size: 14px;
+  }
+}
