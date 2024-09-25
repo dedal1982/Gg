@@ -21,13 +21,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #272d39;
+  background: #242347;
   border-radius: 5px;
 }
 .popup-deposit__tabs {
   height: 52px;
   min-height: 52px;
-  background: #38414e;
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 6px 6px 0 0;
   display: flex;
   align-items: center;
@@ -175,11 +175,11 @@
   margin-bottom: 10px;
 }
 .top-list-item.active {
-  border: 2px solid #535d71;
+  border: 1px solid rgb(128, 130, 255);
   color: #fff;
 }
 .top-list-item:hover {
-  border: 2px solid #535d71;
+  border: 1px solid rgb(128, 130, 255);
   color: #fff;
 }
 .top-list-img {
@@ -629,12 +629,12 @@
   cursor: pointer;
   align-items: center;
   color: #ffffff80;
-  background: #1d222b;
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 4px;
 }
 .crypto-button.active {
   color: #fff;
-  border: 2px solid #535d71;
+  border: 1px solid rgb(128, 130, 255);
 }
 .crypto-full {
   width: 49.3%;
@@ -759,7 +759,7 @@
   text-align: right;
   padding: 0 15px;
   height: 48px;
-  background: #333b49;
+  background: rgba(255, 255, 255, 0.05);
   color: #fff;
   font-size: 14px;
 }
@@ -768,10 +768,10 @@
 }
 .crypto-calc-input input:last-child {
   border-radius: 0 5px 0 0;
-  border-left: 1px solid #313745;
+  border-left: 1px solid #4e5156;
 }
 .crypto-calc-text {
-  background: #2c3340;
+  background: #242347;
   padding: 12px;
   font-family: "Rubik_7b81", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial;
@@ -779,7 +779,7 @@
 }
 .calc-text-info {
   border-radius: 0 0 5px 5px;
-  background: #333b49;
+  background: rgba(255, 255, 255, 0.05);
   padding: 12px;
   font-family: "Rubik_7b81", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial;
@@ -1006,6 +1006,9 @@
   display: none;
 }
 @media screen and (max-width: 900px) {
+  .qr-wrapper {
+    display: none;
+  }
   .page-form {
     display: flex;
     flex-direction: column;
