@@ -393,6 +393,9 @@ if (pageSelectBtn) {
   pageSelectBtn.addEventListener("click", () => {
     listNested.classList.toggle("active");
     pageSelectArrow.classList.toggle("active");
+    if (pageTelNested.closest(".active")) {
+      pageTelNested.classList.remove("active");
+    }
   });
 }
 
@@ -405,9 +408,6 @@ if (telNested) {
     if (listNested.closest(".active")) {
       listNested.classList.remove("active");
       pageTelNested.classList.add("active");
-    } else {
-      pageTelNested.classList.remove("active");
-      listNested.classList.add("active");
     }
   });
 }
