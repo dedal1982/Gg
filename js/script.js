@@ -213,6 +213,7 @@ const makeCodeUniversal = (
 makeCodeUniversal(".tabs-btn", ".popup-deposit__inner");
 makeCodeUniversal(".history-btn", ".history-text-wrapper");
 makeCodeUniversal(".withdraw", ".withdraw-up");
+makeCodeUniversal(".mob-nested", ".withdraw-up");
 
 //-------------------------------------------------
 const bankItems = document.querySelectorAll(".bank-item");
