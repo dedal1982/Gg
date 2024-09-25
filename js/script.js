@@ -434,3 +434,17 @@ if (selectWithdraw) {
     pageSelectArrowWithdraw.classList.toggle("active");
   });
 }
+
+const selectNestedW = document.querySelectorAll(".page-select-nested");
+const nextImgW = document.querySelector(".next-imgw");
+const nextTextW = document.querySelector(".next-textw");
+
+if (selectNestedW) {
+  selectNestedW.forEach((item) => {
+    item.addEventListener("click", () => {
+      nextImgW.src = item.querySelector(".prev-img").src;
+      nextTextW.textContent = item.textContent;
+      listNestedWithdraw.classList.toggle("active");
+    });
+  });
+}

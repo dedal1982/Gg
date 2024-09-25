@@ -1044,7 +1044,8 @@
     font-size: 15px;
     border-right: none;
   }
-  .next-img {
+  .next-img,
+  .next-imgw {
     max-width: 22px;
     max-height: 22px;
     object-fit: cover;
@@ -1067,13 +1068,15 @@
     aspect-ratio: 1 / 1;
     width: 100%;
   }
-  .list-nested {
+  .list-nested,
+  .list-nested-withdraw {
     display: none;
     flex-direction: column;
     position: relative;
     border-radius: 4px;
   }
-  .list-nested.active {
+  .list-nested.active,
+  .list-nested-withdraw.active {
     display: flex;
     position: absolute;
     width: 100%;
