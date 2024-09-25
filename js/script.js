@@ -395,3 +395,17 @@ if (pageSelectBtn) {
     pageSelectArrow.classList.toggle("active");
   });
 }
+
+const telNested = document.getElementById("tel-nested");
+const pageTelNested = document.querySelector(".page-telegram");
+
+if (telNested) {
+  telNested.addEventListener("click", () => {
+    if (listNested.closest(".active")) {
+      listNested.classList.remove("active");
+    } else {
+      listNested.classList.add("active");
+      pageTelNested.classList.remove("active");
+    }
+  });
+}

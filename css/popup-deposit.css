@@ -999,109 +999,6 @@
     padding: 0;
   }
 }
-/* @media screen and (max-width: 900px) {
-  .popup-deposit__inner {
-    flex-direction: column;
-  }
-  .popup-deposit__page {
-    width: 100%;
-  }
-  .page-item {
-    width: 100%;
-  }
-  .top-list-item {
-    background: transparent;
-    color: #000000bf;
-  }
-  .top-list-item.active {
-    border: none;
-    background-color: #f1f1f1;
-    color: #000000bf;
-  }
-  .befo-btn {
-    background: #e5e5e5;
-    color: #000000bf;
-  }
-  .top-list-img {
-    border-right: none;
-  }
-  .top-list-item {
-    margin-bottom: 0;
-  }
-  .top-list-item:hover {
-    border: none;
-    color: #000000bf;
-  }
-  .page-item-title {
-    display: none;
-  }
-  .age-item-text p {
-    display: none;
-  }
-  .page-item-image img {
-    width: 22px;
-    height: 22px;
-  }
-  .age-item-arrow {
-    display: block;
-    font-family: "Inter", sans-serif;
-    color: #ffffff80;
-    font-size: 13px;
-    transform: rotate(90deg);
-    transition: all 0.2s ease-in-out;
-    margin-left: 10px;
-  }
-  .age-item-arrow.active {
-    transform: rotate(-90deg);
-  }
-  .top-list-item img {
-    width: 18px;
-    height: 18px;
-  }
-  .top-list-img {
-    background: #e5e5e5;
-    margin-right: 8px;
-    width: 30px;
-    height: 30px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-  }
-  .page-title-mobile {
-    width: 100%;
-    height: 48px;
-    padding: 0 10px;
-    display: flex;
-    font-size: 15px;
-    border: 2px solid transparent;
-    cursor: pointer;
-    align-items: center;
-    width: 100%;
-    color: #ffffff80;
-    background: #1d222b;
-    border-radius: 4px;
-    font-family: "Rubik_7b81", Arial;
-  }
-  .top-mobile-img {
-    object-fit: cover;
-    padding-right: 10px;
-    margin-right: 10px;
-    border-right: 1px solid #333946;
-    font-size: 15px;
-  }
-  .top-mobile-img img {
-    max-width: 22px;
-    max-height: 22px;
-    object-fit: cover;
-    aspect-ratio: 1 / 1;
-  }
-  .befo-btn_top {
-    background: #333946;
-    color: #fff;
-  }
-} */
 .page-form {
   display: none;
 }
@@ -1201,5 +1098,13 @@
   }
   .input-btns-item {
     width: 25%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .page-telegram {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
   }
 }
