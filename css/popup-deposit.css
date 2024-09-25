@@ -1105,6 +1105,7 @@
     width: 100%;
     position: absolute;
     z-index: 10;
-    bottom: 0;
+    bottom: -47px;
+    background: #272d39;
   }
 }

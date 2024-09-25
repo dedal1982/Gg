@@ -398,14 +398,27 @@ if (pageSelectBtn) {
 
 const telNested = document.getElementById("tel-nested");
 const pageTelNested = document.querySelector(".page-telegram");
+const cryptoNested = document.getElementById("crypto-nested");
 
 if (telNested) {
   telNested.addEventListener("click", () => {
     if (listNested.closest(".active")) {
       listNested.classList.remove("active");
+      pageTelNested.classList.toggle("active");
     } else {
-      listNested.classList.add("active");
       pageTelNested.classList.remove("active");
+      listNested.classList.add("active");
     }
   });
 }
+
+// if (cryptoNested) {
+//   cryptoNested.addEventListener("click", () => {
+//     if (listNested.closest(".active")) {
+//       listNested.classList.remove("active");
+//     } else {
+//       cryptoNested.classList.add("active");
+//       pageTelNested.classList.remove("active");
+//     }
+//   });
+// }
