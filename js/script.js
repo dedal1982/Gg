@@ -404,7 +404,7 @@ if (telNested) {
   telNested.addEventListener("click", () => {
     if (listNested.closest(".active")) {
       listNested.classList.remove("active");
-      pageTelNested.classList.toggle("active");
+      pageTelNested.classList.add("active");
     } else {
       pageTelNested.classList.remove("active");
       listNested.classList.add("active");
