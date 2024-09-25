@@ -1196,4 +1196,10 @@
   .page-footer {
     margin-top: 20px;
   }
+  .input-btns-item:last-child {
+    display: none;
+  }
+  .input-btns-item {
+    width: 25%;
+  }
 }
