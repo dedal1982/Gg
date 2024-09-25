@@ -380,15 +380,18 @@ if (selectNested) {
     item.addEventListener("click", () => {
       nextImg.src = item.querySelector(".prev-img").src;
       nextText.textContent = item.textContent;
+      listNested.classList.toggle("active");
     });
   });
 }
 
 const pageSelectBtn = document.querySelector(".page-select");
 const listNested = document.querySelector(".list-nested");
+const pageSelectArrow = document.querySelector(".page-select span");
 
 if (pageSelectBtn) {
   pageSelectBtn.addEventListener("click", () => {
     listNested.classList.toggle("active");
+    pageSelectArrow.classList.toggle("active");
   });
 }
