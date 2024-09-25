@@ -1109,6 +1109,7 @@
   .page-form {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   .page-select {
     width: 100%;
@@ -1177,6 +1178,10 @@
   }
   .list-nested.active {
     display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    top: 48px;
   }
   .list-nested-triangle {
     position: absolute;
@@ -1184,5 +1189,11 @@
     height: 12px;
     background: inherit;
     visibility: hidden;
+  }
+  .page-item {
+    min-height: fit-content;
+  }
+  .page-footer {
+    margin-top: 20px;
   }
 }
