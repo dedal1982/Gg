@@ -370,30 +370,25 @@ if (withdrawBtn) {
   });
 }
 
-// //мобильная версия выбора банка для оплаты
-// const pageTitleMob = document.querySelector(".page-title-mobile");
-// const pageArrow = document.querySelector(".age-item-arrow");
-// const pageListMob = document.querySelector(".page-top-list");
+//мобильная версия выбора банка для оплаты
+const selectNested = document.querySelectorAll(".page-select-nested");
+const nextImg = document.querySelector(".next-img");
+const nextText = document.querySelector(".next-text");
 
-// if (pageTitleMob) {
-//   pageTitleMob.addEventListener("click", () => {
-//     pageArrow.classList.toggle("active");
-//     pageListMob.classList.toggle("page-top-list_open");
-//   });
-// }
+if (selectNested) {
+  selectNested.forEach((item) => {
+    item.addEventListener("click", () => {
+      nextImg.src = item.querySelector(".prev-img").src;
+      nextText.textContent = item.textContent;
+    });
+  });
+}
 
-// //мобильная версия закрытия списка банков для оплаты
-// const bankItemsMob = document.querySelectorAll(".bank-item");
-// const imgMob = document.querySelector(".top-mobile-img img");
-// const imgMobText = document.querySelector(".page-title-mobile");
+const pageSelectBtn = document.querySelector(".page-select");
+const listNested = document.querySelector(".list-nested");
 
-// if (bankItemsMob) {
-//   bankItemsMob.forEach((item) => {
-//     item.addEventListener("click", () => {
-//       imgMob.src = item.querySelector(".top-list-item img").getAttribute("src");
-//       console.log(item.textContent);
-//       imgMobText.textContent = item.textContent;
-//       pageListMob.classList.remove("page-top-list_open");
-//     });
-//   });
-// }
+if (pageSelectBtn) {
+  pageSelectBtn.addEventListener("click", () => {
+    listNested.classList.toggle("active");
+  });
+}
