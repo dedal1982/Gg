@@ -355,7 +355,7 @@ if (cryptoWalletBtn) {
   });
 }
 
-//перебор и активация унопок на  вывод вывод
+//перебор и активация кнопок на  вывод вывод
 const withdrawBtn = document.querySelectorAll(".withdraw");
 const withdrawPage = document.getElementById("withdrawPage");
 
@@ -422,3 +422,15 @@ if (telNested) {
 //     }
 //   });
 // }
+const selectWithdraw = document.querySelector(".page-select-withdraw");
+const listNestedWithdraw = document.querySelector(".list-nested-withdraw");
+const pageSelectArrowWithdraw = document.querySelector(
+  ".page-select-withdraw span"
+);
+
+if (selectWithdraw) {
+  selectWithdraw.addEventListener("click", () => {
+    listNestedWithdraw.classList.toggle("active");
+    pageSelectArrowWithdraw.classList.toggle("active");
+  });
+}
