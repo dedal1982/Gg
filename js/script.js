@@ -346,6 +346,7 @@ if (cryptoButton) {
 const cryptoWalletBtn = document.getElementById("crypto-wallet");
 const pageCrypto = document.querySelector(".page-crypto");
 const pageItemPrice = document.querySelectorAll(".page-item");
+const pageTopList = document.querySelector(".page-top-list");
 
 if (cryptoWalletBtn) {
   cryptoWalletBtn.addEventListener("click", () => {
@@ -354,6 +355,7 @@ if (cryptoWalletBtn) {
     });
     pageCrypto.classList.add("active");
     cryptoWalletBtn.classList.add("active");
+    pageTopList.classList.add("page-top-list_full");
   });
 }
 

@@ -23,6 +23,7 @@
   transform: translate(-50%, -50%);
   background: #242347;
   border-radius: 5px;
+  overflow: auto;
 }
 .popup-deposit__tabs {
   height: 52px;
@@ -144,6 +145,9 @@
   padding-right: 6px;
   position: relative;
 }
+.page-top-list_full {
+  max-height: 720px;
+}
 .page-top-list_crypto {
   max-height: 662px;
 }
@@ -227,6 +231,7 @@
 }
 .popup-deposit__inner.active {
   display: flex;
+  background: #242347;
 }
 .page-item {
   width: 63%;
