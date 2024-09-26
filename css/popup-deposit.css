@@ -1006,6 +1006,9 @@
   display: none;
 }
 @media screen and (max-width: 900px) {
+  .crypto-button {
+    width: 49.3%;
+  }
   .qr-wrapper {
     display: none;
   }

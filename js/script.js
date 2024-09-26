@@ -232,6 +232,7 @@ if (bankItems) {
     item.addEventListener("click", () => {
       bankItems.forEach((btn) => {
         btn.classList.remove("active");
+        item.classList.add("active");
       });
       pageTelegram1.classList.remove("active");
       pageCrypto1.classList.remove("active");
