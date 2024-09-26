@@ -235,7 +235,8 @@ if (bankItems) {
         btn.classList.remove("active");
         item.classList.add("active");
         pageTopList.classList.remove("active");
-        document.getElementById("crypto-wallet").classList.remove("active");
+        telegramWalletBtn.classList.remove("active");
+        cryptoWalletBtn.classList.remove("active");
       });
       pageTelegram1.classList.remove("active");
       pageCrypto1.classList.remove("active");
@@ -300,6 +301,11 @@ const steamWallletBtn = document.getElementById("steam");
 
 if (telegramWalletBtn) {
   telegramWalletBtn.addEventListener("click", () => {
+    cryptoWalletBtn.classList.remove("active");
+    telegramWalletBtn.classList.add("active");
+    bankItems.forEach((item) => {
+      item.classList.remove("active");
+    });
     pageAll.forEach((item) => {
       item.classList.remove("active");
     });
@@ -355,6 +361,7 @@ if (cryptoWalletBtn) {
     pageItemPrice.forEach((item) => {
       item.classList.remove("active");
     });
+    telegramWalletBtn.classList.remove("active");
     pageCrypto.classList.add("active");
     cryptoWalletBtn.classList.add("active");
     pageTopList.classList.add("active");
