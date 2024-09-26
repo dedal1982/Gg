@@ -235,6 +235,7 @@ if (bankItems) {
         btn.classList.remove("active");
         item.classList.add("active");
         pageTopList.classList.remove("active");
+        document.getElementById("crypto-wallet").classList.remove("active");
       });
       pageTelegram1.classList.remove("active");
       pageCrypto1.classList.remove("active");
