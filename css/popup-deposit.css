@@ -968,7 +968,7 @@
     background: transparent;
     color: #000000bf;
   }
-  .befo-btn {
+  .top-befo {
     background: #e5e5e5;
     color: #000000bf;
   }
@@ -1134,10 +1134,6 @@
   }
 }
 @media screen and (max-width: 900px) {
-  .top-befo {
-    display: none;
-    margin-right: 40px;
-  }
   .top-befo-btn {
     background: #333946;
     color: #fff;

@@ -381,7 +381,7 @@ if (selectNested) {
   selectNested.forEach((item) => {
     item.addEventListener("click", () => {
       nextImg.src = item.querySelector(".prev-img").src;
-      nextText.textContent = item.textContent;
+      nextText.textContent = item.querySelector("p").textContent;
       listNested.classList.toggle("active");
       cryptoNestedPage.classList.remove("active");
       pageAllNestedPage.classList.add("active");
