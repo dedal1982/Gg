@@ -145,7 +145,7 @@
   padding-right: 6px;
   position: relative;
 }
-.page-top-list_full {
+.page-top-list.active {
   max-height: 720px;
 }
 .page-top-list_crypto {

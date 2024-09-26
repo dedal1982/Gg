@@ -226,6 +226,7 @@ const pageTelegram1 = document.querySelector(".page-telegram");
 const pageCrypto1 = document.querySelector(".page-crypto");
 const page500 = document.getElementById("page-500");
 const page2000 = document.getElementById("page-2000");
+const pageTopList = document.querySelector(".page-top-list");
 
 if (bankItems) {
   bankItems.forEach((item) => {
@@ -233,6 +234,7 @@ if (bankItems) {
       bankItems.forEach((btn) => {
         btn.classList.remove("active");
         item.classList.add("active");
+        pageTopList.classList.remove("active");
       });
       pageTelegram1.classList.remove("active");
       pageCrypto1.classList.remove("active");
@@ -346,7 +348,6 @@ if (cryptoButton) {
 const cryptoWalletBtn = document.getElementById("crypto-wallet");
 const pageCrypto = document.querySelector(".page-crypto");
 const pageItemPrice = document.querySelectorAll(".page-item");
-const pageTopList = document.querySelector(".page-top-list");
 
 if (cryptoWalletBtn) {
   cryptoWalletBtn.addEventListener("click", () => {
@@ -355,7 +356,10 @@ if (cryptoWalletBtn) {
     });
     pageCrypto.classList.add("active");
     cryptoWalletBtn.classList.add("active");
-    pageTopList.classList.add("page-top-list_full");
+    pageTopList.classList.add("active");
+    bankItems.forEach((item) => {
+      item.classList.remove("active");
+    });
   });
 }
 
