@@ -263,7 +263,7 @@ if (bankItems) {
       }
       // item.classList.add("active");
       bankItemNext.src = item.querySelector(".top-list-item img").src;
-      bankItemTextNext.textContent = item.textContent;
+      bankItemTextNext.textContent = item.querySelector("span").textContent;
     });
   });
 }

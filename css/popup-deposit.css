@@ -1038,9 +1038,10 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
   .page-select span {
-    margin-left: auto;
+    position: absolute;
     transform: rotate(90deg);
     transition: all 0.2s ease-in-out;
+    right: 20px;
   }
   .page-select span.active {
     transform: rotate(-90deg);
@@ -1130,5 +1131,18 @@
   }
   .history-empty-inner {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .top-befo {
+    display: none;
+    margin-right: 40px;
+  }
+  .top-befo-btn {
+    background: #333946;
+    color: #fff;
+  }
+  .top-befo.active {
+    display: none;
   }
 }
