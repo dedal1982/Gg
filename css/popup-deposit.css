@@ -391,7 +391,7 @@
 }
 .history-btn.active {
   color: #fff;
-  background: #363d4c;
+  background: rgba(255, 255, 255, 0.05);
 }
 .history-text-wrapper {
   display: none;
@@ -1107,6 +1107,11 @@
     width: 25%;
   }
 }
+@media screen and (max-width: 425px) {
+  .crypto-button {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 900px) {
   .page-telegram {
     width: 100%;
@@ -1125,6 +1130,9 @@
   }
   .history-empty-inner {
     font-size: 14px;
+  }
+  .page-telegram {
+    bottom: -70px;
   }
 }
 @media screen and (max-width: 900px) {
