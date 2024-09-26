@@ -151,17 +151,6 @@
 .page-top-list_crypto {
   max-height: 662px;
 }
-/* .page-top-list:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  background: linear-gradient(to top, #1d222b, transparent);
-  pointer-events: none;
-} */
-
 .top-list-item {
   width: 100%;
   color: #fff;
