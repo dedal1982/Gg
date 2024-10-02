@@ -15,6 +15,7 @@
   box-sizing: border-box;
   border-radius: 6px;
   border: 1px solid rgb(128, 130, 255);
+  background: #fff;
 }
 .bubbles__header {
   width: 100%;
@@ -162,6 +163,11 @@ input[type="number"] {
   border-radius: 6px;
   backdrop-filter: blur(10px);
   background: linear-gradient(90deg, #f4a202 0%, #fac257 100%);
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.bubbles__button-submit:hover {
+  background: linear-gradient(90deg, #f3a913 0%, #f5c46a 100%);
 }
 .bubbles__button-submit img {
   width: 15px;
@@ -175,6 +181,7 @@ input[type="number"] {
   flex-direction: column;
   overflow: hidden;
   height: auto;
+  border-radius: 6px;
   background-color: #fff;
 }
 .bubbles__result {
@@ -184,14 +191,20 @@ input[type="number"] {
   align-items: center;
   justify-content: center;
   position: relative;
-  background: green;
 }
 .bubbles__game {
+  padding: 30px 30px 70px;
+  height: 340px;
+  position: relative;
+}
+.bubbles__game_wrapp {
   display: flex;
   align-items: center;
-  padding: 30px 30px 70px;
   gap: 12px;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .bubbles__game-main {
   width: 430px;
@@ -206,9 +219,15 @@ input[type="number"] {
   align-items: center;
   justify-content: space-between;
 }
-
+.bubbles__game_side {
+  position: relative;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background-color: red;
+}
 .bubbles__game-dots {
-  width: 350px;
+  width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
