@@ -1,12 +1,13 @@
-.s-game {
+.bubbles {
   width: 100%;
 }
-.s-game__wrapper {
+.bubbles__wrapper {
   display: flex;
   gap: 20px;
 }
 .bubbles__sidebar {
   width: 350px;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -166,4 +167,17 @@ input[type="number"] {
   width: 15px;
   height: 15px;
   transform: rotate(90deg);
+}
+/*---bubbles__game---*/
+.bubbles__main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+.bubbles__game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
