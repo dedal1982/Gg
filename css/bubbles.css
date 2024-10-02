@@ -266,8 +266,8 @@ input[type="number"] {
   border-top: 1px solid #f7f5fe;
 }
 .result-wrap {
-  width: 150px;
-  height: 80px;
+  width: 135px;
+  height: 65px;
   border-radius: 6px;
   background: red;
   position: relative;
