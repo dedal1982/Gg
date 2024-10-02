@@ -615,3 +615,33 @@ document.getElementById("toggleButton").addEventListener("click", function () {
     resultWrap.classList.add("visible");
   }
 });
+
+//перемещение картинок при клике
+const images = [
+  "../../img/i.webp",
+  "../../img/i2.webp",
+  "../../img/i3.jpg",
+  "../../img/i4.webp",
+  "../../img/i5.webp",
+];
+
+document.getElementById("toggleButton").addEventListener("click", function () {
+  const box1 = document.getElementById("box1");
+  const box2 = document.getElementById("box2");
+  const box3 = document.getElementById("box3");
+
+  const img1 = box1.querySelector("img");
+  const img2 = box2.querySelector("img");
+  const img3 = box3.querySelector("img");
+
+  // Сохраняем URL изображения из второго дива
+  const img2Src = img2.src;
+
+  // Меняем картинки
+  img1.src = img2Src; // Перемещаем картинку из второго дива в первый
+  img2.src = img3.src; // Картинка из третьего дива заменяет картинку второго дива
+
+  // Генерируем случайный индекс и ставим новое изображение в третий див
+  const randomIndex = Math.floor(Math.random() * images.length);
+  img3.src = images[randomIndex];
+});
