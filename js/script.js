@@ -504,3 +504,34 @@ function preventArrowKeys(event) {
     event.preventDefault();
   }
 }
+
+//калькулятор
+const inputAmount = document.getElementById("inputAmount");
+const btnMin = document.getElementById("btnMin");
+const btnMax = document.getElementById("btnMax");
+const btnX2 = document.getElementById("btnX2");
+const btn2 = document.getElementById("btn/2");
+
+if (btnMin) {
+  btnMin.addEventListener("click", () => {
+    inputAmount.value = 100;
+  });
+}
+
+if (btnMax) {
+  btnMax.addEventListener("click", () => {
+    inputAmount.value = 1000;
+  });
+}
+
+if (btnX2) {
+  btnX2.addEventListener("click", () => {
+    inputAmount.value = inputAmount.value * 2;
+  });
+}
+
+if (btn2) {
+  btn2.addEventListener("click", () => {
+    inputAmount.value = inputAmount.value / 2;
+  });
+}

@@ -145,12 +145,13 @@
                     <div class="bubbles__field-inner">
                       <!--кнопки-->
                       <div class="bubbles__buttons">
-                        <button class="bubbles__btn">Min</button>
-                        <button class="bubbles__btn">X2</button>
+                        <button id="btnMin" class="bubbles__btn">Min</button>
+                        <button id="btnX2" class="bubbles__btn">X2</button>
                       </div>
                       <!--сумма-->
                       <input
-                        class="bubbles__input input-amount"
+                        id="inputAmount"
+                        class="bubbles__input"
                         type="number"
                         value="1"
                         placeholder="100.00 ₽"
@@ -159,8 +160,8 @@
                       />
                       <!--кнопки-->
                       <div class="bubbles__buttons">
-                        <button class="bubbles__btn">/2</button>
-                        <button class="bubbles__btn">Max</button>
+                        <button id="btn/2" class="bubbles__btn">/2</button>
+                        <button id="btnMax" class="bubbles__btn">Max</button>
                       </div>
                     </div>
                   </div>
