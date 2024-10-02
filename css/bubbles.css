@@ -229,6 +229,7 @@ input[type="number"] {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .bubbles__game_side-center {
   width: 170px;
