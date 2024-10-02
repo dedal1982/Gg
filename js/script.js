@@ -601,3 +601,17 @@ if (percent85) {
     inputChance.value = 85.0056;
   });
 }
+
+//появление результата
+document.getElementById("toggleButton").addEventListener("click", function () {
+  const resultWrap = document.getElementById("resultWrap");
+
+  if (resultWrap.classList.contains("visible")) {
+    resultWrap.classList.remove("visible");
+    setTimeout(() => {
+      resultWrap.classList.add("visible");
+    }, 300);
+  } else {
+    resultWrap.classList.add("visible");
+  }
+});

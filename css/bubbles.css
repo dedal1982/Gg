@@ -271,6 +271,20 @@ input[type="number"] {
   border-radius: 6px;
   background: red;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(10deg);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  visibility: hidden;
+}
+
+.result-wrap.visible {
+  transform: rotate(0deg);
+  opacity: 1;
+  visibility: visible;
 }
 .result-wrap::after {
   content: "";
@@ -283,4 +297,10 @@ input[type="number"] {
   border-style: solid;
   border-width: 15px 12px 0;
   border-color: red transparent transparent;
+}
+.result-ratio {
+  color: #fff;
+}
+.result-winning {
+  color: #fff;
 }
