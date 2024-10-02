@@ -176,7 +176,6 @@ input[type="number"] {
   overflow: hidden;
   height: auto;
   background-color: #fff;
-  position: relative;
 }
 .bubbles__result {
   height: 88px;
@@ -185,16 +184,14 @@ input[type="number"] {
   align-items: center;
   justify-content: center;
   position: relative;
+  background: green;
 }
 .bubbles__game {
   display: flex;
   align-items: center;
   padding: 30px 30px 70px;
   gap: 12px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
 }
 .bubbles__game-main {
   width: 430px;
@@ -211,7 +208,6 @@ input[type="number"] {
 }
 
 .bubbles__game-dots {
-  min-height: 350px;
   width: 350px;
   display: flex;
   align-items: center;
@@ -238,4 +234,11 @@ input[type="number"] {
   height: 12px;
   border-radius: 12px;
   background: #7f6fc9;
+}
+.game_footer {
+  margin-top: auto;
+  position: relative;
+  width: 100%;
+  height: 87px;
+  border-top: 1px solid #f7f5fe;
 }
