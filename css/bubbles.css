@@ -1,0 +1,24 @@
+.s-game {
+  width: 100%;
+}
+.s-game__wrapper {
+  display: flex;
+  gap: 20px;
+}
+.bubbles__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.bubbles__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bubbles__header-name {
+  display: flex;
+  gap: 12px;
+}
