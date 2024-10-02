@@ -42,6 +42,7 @@ a {
 
 button {
   border: none;
+  cursor: pointer;
 }
 .wrapper {
   display: flex;

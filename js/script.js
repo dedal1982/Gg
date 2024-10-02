@@ -496,3 +496,11 @@ document.addEventListener("click", (e) => {
     popupDeposit.classList.remove("active");
   }
 });
+
+//запрет изменения суммы кнопками вверх и вниз
+function preventArrowKeys(event) {
+  // Запретить стрелки вверх (keyCode 38) и вниз (keyCode 40)
+  if (event.keyCode === 38 || event.keyCode === 40) {
+    event.preventDefault();
+  }
+}

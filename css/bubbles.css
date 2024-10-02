@@ -6,19 +6,143 @@
   gap: 20px;
 }
 .bubbles__sidebar {
+  width: 350px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
   box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid rgb(128, 130, 255);
 }
 .bubbles__header {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: inherit;
 }
 .bubbles__header-name {
   display: flex;
+  align-items: center;
   gap: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+.bubbles__header-icon {
+  width: 32px;
+  height: 32px;
+  background: radial-gradient(
+    73.33% 73.33% at 50% 50%,
+    #9db1ff 0,
+    #6d3eff 100%
+  );
+  border-radius: 4px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.bubbles__header-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.bubbles__header-shield {
+  width: 32px;
+  height: 32px;
+  background: radial-gradient(
+    73.33% 73.33% at 50% 50%,
+    #9db1ff 0,
+    #6d3eff 100%
+  );
+  border-radius: 4px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.bubbles__header-shield img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.bubbles__field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bubbles__field-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b6b0d7;
+}
+.bubbles__field-wrapper {
+  width: 100%;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  padding: 8px;
+}
+.bubbles__buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.bubbles__btn {
+  width: 42px;
+  height: 38px;
+  background: linear-gradient(90deg, #7449e6 0.06%, #69a4ff 98.49%);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+}
+.bubbles__input {
+  width: 100%;
+  height: 38px;
+  text-align: center;
+  border-radius: 4px;
+  background: #e7e2f9;
+  font-weight: 600;
+  font-size: 16px;
+}
+.bubbles__input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #b6b0d7;
+}
+input {
+  border: 0;
+}
+input:focus,
+textarea:focus,
+select:focus,
+a:focus {
+  outline: none;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
 }
