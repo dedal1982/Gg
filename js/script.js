@@ -603,8 +603,63 @@ if (percent85) {
 }
 
 //появление результата
+// const rezult = [
+//   {
+//     resultRatio: "x2.85",
+//     resultWinning: "+1.07",
+//   },
+//   {
+//     resultRatio: "x3.85",
+//     resultWinning: "+1.3",
+//   },
+//   {
+//     resultRatio: "x1.85",
+//     resultWinning: "+1.1",
+//   },
+// ];
+// document.getElementById("toggleButton").addEventListener("click", function () {
+//   const resultWrap = document.getElementById("resultWrap");
+//   const resultRatio = document.querySelector(".result-ratio");
+//   const resultWinning = document.querySelector(".result-winning");
+
+//   if (resultWrap.classList.contains("visible")) {
+//     resultWrap.classList.remove("visible");
+//     setTimeout(() => {
+//       resultWrap.classList.add("visible");
+//     }, 200);
+//   } else {
+//     resultWrap.classList.add("visible");
+//   }
+// });
+const rezult = [
+  {
+    resultRatio: "x2.85",
+    resultWinning: "+1.07",
+  },
+  {
+    resultRatio: "x3.85",
+    resultWinning: "+1.3",
+  },
+  {
+    resultRatio: "x1.85",
+    resultWinning: "+1.1",
+  },
+];
+
 document.getElementById("toggleButton").addEventListener("click", function () {
   const resultWrap = document.getElementById("resultWrap");
+  const resultRatio = document.querySelector(".result-ratio");
+  const resultWinning = document.querySelector(".result-winning");
+
+  // Генерация случайного индекса
+  const randomIndex = Math.floor(Math.random() * rezult.length);
+
+  // Получение случайного результата
+  const randomResult = rezult[randomIndex];
+
+  // Обновление значений
+  resultRatio.textContent = randomResult.resultRatio;
+  resultWinning.textContent = randomResult.resultWinning;
 
   if (resultWrap.classList.contains("visible")) {
     resultWrap.classList.remove("visible");
@@ -617,96 +672,6 @@ document.getElementById("toggleButton").addEventListener("click", function () {
 });
 
 //перемещение картинок при клике
-// const slider = document.querySelector(".items");
-// const slides = document.querySelectorAll(".item");
-// const button = document.querySelectorAll(".bubbles__button-submit");
-
-// let current = 0;
-// let prev = slides.length - 1; // меняем на последний слайд
-// let next = 1;
-
-// for (let i = 0; i < button.length; i++) {
-//   button[i].addEventListener("click", () => (i == 0 ? gotoNext() : gotoPrev())); // меняем вызовы
-// }
-
-// const gotoPrev = () =>
-//   current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
-
-// const gotoNext = () =>
-//   current < slides.length - 1 ? gotoNum(current + 1) : gotoNum(0);
-
-// const gotoNum = (number) => {
-//   current = number;
-//   prev = (current - 1 + slides.length) % slides.length; // обернуть prev
-//   next = (current + 1) % slides.length; // обернуть next
-
-//   // Удаляем классы
-//   for (let i = 0; i < slides.length; i++) {
-//     slides[i].classList.remove("active");
-//     slides[i].classList.remove("prev");
-//     slides[i].classList.remove("next");
-//   }
-
-//   // Добавляем классы для текущего, предыдущего и следующего слайда
-//   slides[current].classList.add("active");
-//   slides[prev].classList.add("prev");
-//   slides[next].classList.add("next");
-// };
-/********************* */
-// const slider = document.querySelector(".items");
-// const slides = document.querySelectorAll(".item");
-// const button = document.querySelectorAll(".bubbles__button-submit");
-
-// // Массив с изображениями
-// const images = [
-//   "../../img/i.webp",
-//   "../../img/i2.webp",
-//   "../../img/i3.jpg",
-//   "../../img/i.4webp",
-//   // добавьте свои URL изображений
-// ];
-
-// let current = 0;
-// let prev = slides.length - 1; // меняем на последний слайд
-// let next = 1;
-
-// for (let i = 0; i < button.length; i++) {
-//   button[i].addEventListener("click", () => (i == 0 ? gotoNext() : gotoPrev()));
-// }
-
-// const gotoPrev = () =>
-//   current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
-
-// const gotoNext = () =>
-//   current < slides.length - 1 ? gotoNum(current + 1) : gotoNum(0);
-
-// const gotoNum = (number) => {
-//   current = number;
-//   prev = (current - 1 + slides.length) % slides.length; // обернуть prev
-//   next = (current + 1) % slides.length; // обернуть next
-
-//   // Удаляем классы
-//   for (let i = 0; i < slides.length; i++) {
-//     slides[i].classList.remove("active");
-//     slides[i].classList.remove("prev");
-//     slides[i].classList.remove("next");
-//   }
-
-//   // Добавляем классы для текущего, предыдущего и следующего слайда
-//   slides[current].classList.add("active");
-//   slides[prev].classList.add("prev");
-//   slides[next].classList.add("next");
-
-//   // Меняем изображение для следующего слайда на случайное
-//   const nextSlideImage = slides[next].querySelector(".item-slide img");
-//   nextSlideImage.src = getRandomImage(); // Устанавливаем случайное изображение
-// };
-
-// // Функция для получения случайного изображения из массива
-// const getRandomImage = () => {
-//   const randomIndex = Math.floor(Math.random() * images.length);
-//   return images[randomIndex];
-// };
 const slider = document.querySelector(".items");
 const slides = document.querySelectorAll(".item");
 const button = document.querySelectorAll(".bubbles__button-submit");
@@ -721,7 +686,7 @@ const images = [
 ];
 
 let current = 0;
-let prev = slides.length - 1; // меняем на последний слайд
+let prev = slides.length - 1;
 let next = 1;
 
 for (let i = 0; i < button.length; i++) {
@@ -730,39 +695,35 @@ for (let i = 0; i < button.length; i++) {
 
 const gotoPrev = () => {
   current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
-  updateNextSlideImage(); // добавляем обновление изображения
+  updateNextSlideImage();
 };
 
 const gotoNext = () => {
   current < slides.length - 1 ? gotoNum(current + 1) : gotoNum(0);
-  updateNextSlideImage(); // добавляем обновление изображения
+  updateNextSlideImage();
 };
 
 const gotoNum = (number) => {
   current = number;
-  prev = (current - 1 + slides.length) % slides.length; // обернуть prev
-  next = (current + 1) % slides.length; // обернуть next
+  prev = (current - 1 + slides.length) % slides.length;
+  next = (current + 1) % slides.length;
 
-  // Удаляем классы
   for (let i = 0; i < slides.length; i++) {
     slides[i].classList.remove("active");
     slides[i].classList.remove("prev");
     slides[i].classList.remove("next");
   }
 
-  // Добавляем классы для текущего, предыдущего и следующего слайда
   slides[current].classList.add("active");
   slides[prev].classList.add("prev");
   slides[next].classList.add("next");
 };
 
 const updateNextSlideImage = () => {
-  // Меняем изображение для следующего слайда на случайное
   const nextSlideImage = slides[next].querySelector(".item-slide img");
-  nextSlideImage.src = getRandomImage(); // Устанавливаем случайное изображение
+  nextSlideImage.src = getRandomImage();
 };
 
-// Функция для получения случайного изображения из массива
 const getRandomImage = () => {
   const randomIndex = Math.floor(Math.random() * images.length);
   return images[randomIndex];

@@ -281,7 +281,7 @@ input[type="number"] {
   width: 135px;
   height: 65px;
   border-radius: 6px;
-  background: red;
+  background: transparent;
   position: relative;
   display: flex;
   flex-direction: column;
