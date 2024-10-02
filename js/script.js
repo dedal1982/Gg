@@ -622,7 +622,7 @@ const images = [
   "../../img/i2.webp",
   "../../img/i3.jpg",
   "../../img/i4.webp",
-  "../../img/i5.webp",
+  "../../img/i5.jpg",
 ];
 
 document.getElementById("toggleButton").addEventListener("click", function () {
