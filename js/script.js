@@ -617,31 +617,108 @@ document.getElementById("toggleButton").addEventListener("click", function () {
 });
 
 //перемещение картинок при клике
-const images = [
-  "../../img/i.webp",
-  "../../img/i2.webp",
-  "../../img/i3.jpg",
-  "../../img/i4.webp",
-  "../../img/i5.jpg",
-];
+// const images = [
+//   "../../img/i.webp",
+//   "../../img/i2.webp",
+//   "../../img/i3.jpg",
+//   "../../img/i4.webp",
+//   "../../img/i5.jpg",
+// ];
 
-document.getElementById("toggleButton").addEventListener("click", function () {
-  const box1 = document.getElementById("box1");
-  const box2 = document.getElementById("box2");
-  const box3 = document.getElementById("box3");
+// document.getElementById("toggleButton").addEventListener("click", function () {
+//   const box1 = document.getElementById("box1");
+//   const box2 = document.getElementById("box2");
+//   const box3 = document.getElementById("box3");
 
-  const img1 = box1.querySelector("img");
-  const img2 = box2.querySelector("img");
-  const img3 = box3.querySelector("img");
+//   const img1 = box1.querySelector("img");
+//   const img2 = box2.querySelector("img");
+//   const img3 = box3.querySelector("img");
 
-  // Сохраняем URL изображения из второго дива
-  const img2Src = img2.src;
+//   // Сохраняем URL изображения из второго дива
+//   const img2Src = img2.src;
 
-  // Меняем картинки
-  img1.src = img2Src; // Перемещаем картинку из второго дива в первый
-  img2.src = img3.src; // Картинка из третьего дива заменяет картинку второго дива
+//   // Меняем картинки
+//   img1.src = img2Src; // Перемещаем картинку из второго дива в первый
+//   img2.src = img3.src; // Картинка из третьего дива заменяет картинку второго дива
 
-  // Генерируем случайный индекс и ставим новое изображение в третий див
-  const randomIndex = Math.floor(Math.random() * images.length);
-  img3.src = images[randomIndex];
-});
+//   // Генерируем случайный индекс и ставим новое изображение в третий див
+//   const randomIndex = Math.floor(Math.random() * images.length);
+//   img3.src = images[randomIndex];
+// });
+
+//ыыыыыыыыыыыыыыыыыыыыыыыы
+// const slider = document.querySelector(".items");
+// const slides = document.querySelectorAll(".item");
+// const button = document.querySelectorAll(".bubbles__button-submit");
+
+// let current = 0;
+// let prev = 4;
+// let next = 1;
+
+// for (let i = 0; i < button.length; i++) {
+//   button[i].addEventListener("click", () => (i == 0 ? gotoPrev() : gotoNext()));
+// }
+
+// const gotoPrev = () =>
+//   current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+
+// const gotoNext = () => (current < 4 ? gotoNum(current + 1) : gotoNum(0));
+
+// const gotoNum = (number) => {
+//   current = number;
+//   prev = current - 1;
+//   next = current + 1;
+
+//   for (let i = 0; i < slides.length; i++) {
+//     slides[i].classList.remove("active");
+//     slides[i].classList.remove("prev");
+//     slides[i].classList.remove("next");
+//   }
+
+//   if (next == 5) {
+//     next = 0;
+//   }
+
+//   if (prev == -1) {
+//     prev = 4;
+//   }
+
+//   slides[current].classList.add("active");
+//   slides[prev].classList.add("prev");
+//   slides[next].classList.add("next");
+// };
+const slider = document.querySelector(".items");
+const slides = document.querySelectorAll(".item");
+const button = document.querySelectorAll(".bubbles__button-submit");
+
+let current = 0;
+let prev = slides.length - 1; // меняем на последний слайд
+let next = 1;
+
+for (let i = 0; i < button.length; i++) {
+  button[i].addEventListener("click", () => (i == 0 ? gotoNext() : gotoPrev())); // меняем вызовы
+}
+
+const gotoPrev = () =>
+  current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+
+const gotoNext = () =>
+  current < slides.length - 1 ? gotoNum(current + 1) : gotoNum(0);
+
+const gotoNum = (number) => {
+  current = number;
+  prev = (current - 1 + slides.length) % slides.length; // обернуть prev
+  next = (current + 1) % slides.length; // обернуть next
+
+  // Удаляем классы
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+    slides[i].classList.remove("prev");
+    slides[i].classList.remove("next");
+  }
+
+  // Добавляем классы для текущего, предыдущего и следующего слайда
+  slides[current].classList.add("active");
+  slides[prev].classList.add("prev");
+  slides[next].classList.add("next");
+};
