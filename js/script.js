@@ -603,45 +603,21 @@ if (percent85) {
 }
 
 //появление результата
-// const rezult = [
-//   {
-//     resultRatio: "x2.85",
-//     resultWinning: "+1.07",
-//   },
-//   {
-//     resultRatio: "x3.85",
-//     resultWinning: "+1.3",
-//   },
-//   {
-//     resultRatio: "x1.85",
-//     resultWinning: "+1.1",
-//   },
-// ];
-// document.getElementById("toggleButton").addEventListener("click", function () {
-//   const resultWrap = document.getElementById("resultWrap");
-//   const resultRatio = document.querySelector(".result-ratio");
-//   const resultWinning = document.querySelector(".result-winning");
-
-//   if (resultWrap.classList.contains("visible")) {
-//     resultWrap.classList.remove("visible");
-//     setTimeout(() => {
-//       resultWrap.classList.add("visible");
-//     }, 200);
-//   } else {
-//     resultWrap.classList.add("visible");
-//   }
-// });
 const rezult = [
   {
-    resultRatio: "x2.85",
+    resultRatio: "2.85",
     resultWinning: "+1.07",
   },
   {
-    resultRatio: "x3.85",
+    resultRatio: "3.85",
     resultWinning: "+1.3",
   },
   {
-    resultRatio: "x1.85",
+    resultRatio: "1.85",
+    resultWinning: "+1.1",
+  },
+  {
+    resultRatio: "1.01",
     resultWinning: "+1.1",
   },
 ];
@@ -650,6 +626,8 @@ document.getElementById("toggleButton").addEventListener("click", function () {
   const resultWrap = document.getElementById("resultWrap");
   const resultRatio = document.querySelector(".result-ratio");
   const resultWinning = document.querySelector(".result-winning");
+  const resultWrapColor = document.querySelector(".result-wrap");
+  const inputPurpose2 = document.getElementById("inputPurpose");
 
   // Генерация случайного индекса
   const randomIndex = Math.floor(Math.random() * rezult.length);
@@ -660,6 +638,12 @@ document.getElementById("toggleButton").addEventListener("click", function () {
   // Обновление значений
   resultRatio.textContent = randomResult.resultRatio;
   resultWinning.textContent = randomResult.resultWinning;
+  if (resultRatio.textContent <= inputPurpose2.value) {
+    resultWrapColor.classList.add("result-wrap-red");
+  } else if (resultRatio.textContent >= inputPurpose2.value) {
+    resultWrapColor.classList.remove("result-wrap-red");
+    resultWrapColor.classList.add("result-wrap-green");
+  }
 
   if (resultWrap.classList.contains("visible")) {
     resultWrap.classList.remove("visible");

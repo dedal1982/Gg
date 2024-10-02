@@ -309,6 +309,17 @@ input[type="number"] {
   transform: translate(-50%);
   border-style: solid;
   border-width: 15px 12px 0;
+}
+.result-wrap-green {
+  background: #2dab2d;
+}
+.result-wrap-green::after {
+  border-color: #2dab2d transparent transparent;
+}
+.result-wrap-red {
+  background: red;
+}
+.result-wrap-red::after {
   border-color: red transparent transparent;
 }
 .result-ratio {
