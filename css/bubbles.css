@@ -148,3 +148,9 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+.bubbles__button-submit {
+  width: 100%;
+  height: 48px;
+  border-radius: 6px;
+  background: #ffffff26;
+}
