@@ -610,7 +610,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
     resultWrap.classList.remove("visible");
     setTimeout(() => {
       resultWrap.classList.add("visible");
-    }, 300);
+    }, 200);
   } else {
     resultWrap.classList.add("visible");
   }
