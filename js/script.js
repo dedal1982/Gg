@@ -535,3 +535,69 @@ if (btn2) {
     inputAmount.value = inputAmount.value / 2;
   });
 }
+
+const inputPurpose = document.getElementById("inputPurpose");
+const X1_5 = document.getElementById("X1.5");
+const multiplyBy2 = document.getElementById("multiplyBy2");
+const multiplyBy5 = document.getElementById("multiplyBy5");
+const multiplyBy10 = document.getElementById("multiplyBy10");
+
+if (X1_5) {
+  X1_5.addEventListener("click", () => {
+    inputPurpose.value = 2;
+  });
+}
+
+if (X1_5) {
+  X1_5.addEventListener("click", () => {
+    inputPurpose.value = 1.5;
+  });
+}
+
+if (multiplyBy2) {
+  multiplyBy2.addEventListener("click", () => {
+    inputPurpose.value = 2;
+  });
+}
+
+if (multiplyBy5) {
+  multiplyBy5.addEventListener("click", () => {
+    inputPurpose.value = 5;
+  });
+}
+
+if (multiplyBy10) {
+  multiplyBy10.addEventListener("click", () => {
+    inputPurpose.value = 10;
+  });
+}
+
+const inputChance = document.getElementById("inputChance");
+const percent25 = document.getElementById("percent25");
+const percent50 = document.getElementById("percent50");
+const percent75 = document.getElementById("percent75");
+const percent85 = document.getElementById("percent85");
+
+if (percent25) {
+  percent25.addEventListener("click", () => {
+    inputChance.value = 25;
+  });
+}
+
+if (percent50) {
+  percent50.addEventListener("click", () => {
+    inputChance.value = 50;
+  });
+}
+
+if (percent75) {
+  percent75.addEventListener("click", () => {
+    inputChance.value = 75.0019;
+  });
+}
+
+if (percent85) {
+  percent85.addEventListener("click", () => {
+    inputChance.value = 85.0056;
+  });
+}

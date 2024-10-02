@@ -138,7 +138,7 @@
                     <img src="./icons/shield.png" alt="shield" />
                   </button>
                 </div>
-                <form action="#" class="bubbles__field">
+                <form novalidate action="#" class="bubbles__field">
                   <!--поле-->
                   <div class="bubbles__field-wrapper">
                     <span class="bubbles__field-name">Сумма ставки</span>
@@ -171,11 +171,14 @@
                     <div class="bubbles__field-inner">
                       <!--кнопки-->
                       <div class="bubbles__buttons">
-                        <button class="bubbles__btn">X1.5</button>
-                        <button class="bubbles__btn">X2</button>
+                        <button id="X1.5" class="bubbles__btn">X1.5</button>
+                        <button id="multiplyBy2" class="bubbles__btn">
+                          X2
+                        </button>
                       </div>
                       <!--сумма-->
                       <input
+                        id="inputPurpose"
                         class="bubbles__input input-amount"
                         type="number"
                         value="1.07"
@@ -185,8 +188,12 @@
                       />
                       <!--кнопки-->
                       <div class="bubbles__buttons">
-                        <button class="bubbles__btn">X5</button>
-                        <button class="bubbles__btn">X10</button>
+                        <button id="multiplyBy5" class="bubbles__btn">
+                          X5
+                        </button>
+                        <button id="multiplyBy10" class="bubbles__btn">
+                          X10
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -196,11 +203,12 @@
                     <div class="bubbles__field-inner">
                       <!--кнопки-->
                       <div class="bubbles__buttons">
-                        <button class="bubbles__btn">25%</button>
-                        <button class="bubbles__btn">50%</button>
+                        <button id="percent25" class="bubbles__btn">25%</button>
+                        <button id="percent50" class="bubbles__btn">50%</button>
                       </div>
                       <!--сумма-->
                       <input
+                        id="inputChance"
                         class="bubbles__input input-amount"
                         type="number"
                         value="90.6542"
@@ -210,8 +218,8 @@
                       />
                       <!--кнопки-->
                       <div class="bubbles__buttons">
-                        <button class="bubbles__btn">75%</button>
-                        <button class="bubbles__btn">85%</button>
+                        <button id="percent75" class="bubbles__btn">75%</button>
+                        <button id="percent85" class="bubbles__btn">85%</button>
                       </div>
                     </div>
                   </div>
