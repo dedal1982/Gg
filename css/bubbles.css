@@ -9,7 +9,7 @@
 }
 .bubbles__sidebar {
   width: 350px;
-  min-height: 350px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -190,7 +190,7 @@ input[type="number"] {
 }
 .bubbles__result {
   height: 88px;
-  padding: 20px 0 0;
+  padding: 70px 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -278,9 +278,13 @@ input[type="number"] {
   height: 87px;
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 100px;
   padding: 20px;
   box-sizing: border-box;
+  overflow: auto;
+}
+.game_footer {
+  scrollbar-width: none;
 }
 .game_footer-div {
   display: flex;
