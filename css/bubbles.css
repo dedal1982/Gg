@@ -276,6 +276,29 @@ input[type="number"] {
   position: relative;
   width: 100%;
   height: 87px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.game_footer-div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.game_footer-red {
+  color: red;
+}
+.game_footer-green {
+  color: #2dab2d;
+}
+.game_footer p {
+  font-size: 15px;
+  color: #ffffff7d;
+}
+.game_footer span {
+  font-size: 17px;
 }
 .result-wrap {
   width: 135px;
