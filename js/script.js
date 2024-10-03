@@ -639,14 +639,20 @@ document.getElementById("toggleButton").addEventListener("click", function () {
   // Обновление значений
   resultRatio.textContent = randomResult.resultRatio;
   resultWinning.textContent = randomResult.resultWinning;
-
-  // Установка цвета в зависимости от результата
   if (resultRatio.textContent <= inputPurpose2.value) {
     resultWrapColor.classList.add("result-wrap-red");
-    resultWrapColor.classList.remove("result-wrap-green");
-  } else {
+  } else if (resultRatio.textContent >= inputPurpose2.value) {
     resultWrapColor.classList.remove("result-wrap-red");
     resultWrapColor.classList.add("result-wrap-green");
+  }
+
+  if (resultWrap.classList.contains("visible")) {
+    resultWrap.classList.remove("visible");
+    setTimeout(() => {
+      resultWrap.classList.add("visible");
+    }, 200);
+  } else {
+    resultWrap.classList.add("visible");
   }
   // // Создание нового div и добавление его в gameFooter
   const newDiv = document.createElement("div");
@@ -665,66 +671,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
   newDiv.appendChild(newDivRatio);
   newDiv.appendChild(newDivWinning);
   gameFooter.prepend(newDiv);
-
-  // Показать блок с результатом
-  if (!resultWrap.classList.contains("visible")) {
-    resultWrap.classList.add("visible");
-  }
-
-  // // Создание нового div и добавление его в gameFooter
-  // const newDiv = document.createElement("div");
-  // const newDivRatio = document.createElement("p");
-  // const newDivWinning = document.createElement("p");
-
-  // newDivRatio.textContent = resultRatio.textContent;
-  // newDivWinning.textContent = resultWinning.textContent;
-
-  // newDiv.appendChild(newDivRatio);
-  // newDiv.appendChild(newDivWinning);
-  // gameFooter.prepend(newDiv);
 });
-
-// document.getElementById("toggleButton").addEventListener("click", function () {
-//   const resultWrap = document.getElementById("resultWrap");
-//   const resultRatio = document.querySelector(".result-ratio");
-//   const resultWinning = document.querySelector(".result-winning");
-//   const resultWrapColor = document.querySelector(".result-wrap");
-//   const inputPurpose2 = document.getElementById("inputPurpose");
-//   const gameFooter = document.querySelector(".game_footer");
-
-//   // Генерация случайного индекса
-//   const randomIndex = Math.floor(Math.random() * rezult.length);
-
-//   // Получение случайного результата
-//   const randomResult = rezult[randomIndex];
-
-//   // Обновление значений
-//   resultRatio.textContent = randomResult.resultRatio;
-//   resultWinning.textContent = randomResult.resultWinning;
-//   if (resultRatio.textContent <= inputPurpose2.value) {
-//     resultWrapColor.classList.add("result-wrap-red");
-//   } else if (resultRatio.textContent >= inputPurpose2.value) {
-//     resultWrapColor.classList.remove("result-wrap-red");
-//     resultWrapColor.classList.add("result-wrap-green");
-//   }
-
-//   if (resultWrap.classList.contains("visible")) {
-//     resultWrap.classList.remove("visible");
-//     setTimeout(() => {
-//       resultWrap.classList.add("visible");
-//     }, 200);
-//   } else {
-//     resultWrap.classList.add("visible");
-//     const newDiv = document.createElement("div");
-//     const newDivRatio = document.createElement("p");
-//     const newDivwWinning = document.createElement("p");
-//     newDivRatio.textContent = resultRatio.textContent;
-//     newDivwWinning.textContent = resultWinning.textContent;
-//     newDiv.appendChild(newDivRatio);
-//     newDiv.appendChild(newDivwWinning);
-//     gameFooter.append(newDiv);
-//   }
-// });
 
 //перемещение картинок при клике
 const slider = document.querySelector(".items");
