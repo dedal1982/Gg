@@ -85,26 +85,6 @@ function updateActiveTab() {
   });
 }
 
-//menu;
-// function toggleActiveClass() {
-//   const authList = document.querySelector(".header__auth-list");
-//   const authIconBtn = document.querySelector(".header__auth-tringle");
-//   authList.classList.toggle("active");
-//   authIconBtn.classList.toggle("active");
-// }
-
-// document
-//   .querySelector("#myButton")
-//   .addEventListener("click", toggleActiveClass);
-
-// const itemBox = document.querySelector(".bids__item-box");
-// const itemBoxFull = document.querySelector(".bids__item-box-full");
-
-// document.getElementById("toggleButton").addEventListener("click", () => {
-//   itemBox.classList.toggle("active");
-//   itemBoxFull.classList.toggle("active");
-// });
-
 const arrowBtn = document.querySelector(".toggleButton");
 const itemBox = document.querySelector(".bids__item-box");
 const itemBoxFull = document.querySelector(".bids__item-box-full");
@@ -731,7 +711,7 @@ const getRandomImage = () => {
   return images[randomIndex];
 };
 
-/////////////////////////////////////
+//слайдер
 const bubblesDotsWrap = document.querySelector(".bubbles__dots_wrap");
 const bubblesDots = document.querySelectorAll(".bubbles__dot");
 const bubblesButton = document.querySelector(".bubbles__button-submit");
