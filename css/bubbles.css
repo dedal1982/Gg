@@ -594,15 +594,13 @@ input[type="number"] {
 }
 .bubbles__dots {
   width: 350px;
-  min-width: 350px;
   position: absolute;
   top: 50%;
-  left: -12%;
+  left: 0;
 }
 .dots-right {
   display: flex;
-  overflow: auto;
-  min-width: 350px;
+  width: 350px;
   position: absolute;
   top: 50%;
   left: auto;
@@ -611,6 +609,10 @@ input[type="number"] {
 .bubbles__dots_wrap {
   display: flex;
   align-items: center;
+}
+.bubbles__dots_wrap.active {
+  transform: translate(-70px);
+  transition: transform 0.3s ease;
 }
 .bubbles__dot {
   position: relative;
@@ -621,12 +623,13 @@ input[type="number"] {
   min-width: 70px;
   transform-origin: center;
 }
+
 .bubbles__dot:after {
   content: "";
   display: block;
-  /* position: absolute; */
   width: 12px;
   height: 12px;
   border-radius: 12px;
   background: #7f6fc9;
 }
+/*************/

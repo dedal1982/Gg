@@ -730,3 +730,26 @@ const getRandomImage = () => {
   const randomIndex = Math.floor(Math.random() * images.length);
   return images[randomIndex];
 };
+
+/////////////////////////////////////
+const bubblesDotsWrap = document.querySelector(".bubbles__dots_wrap");
+const bubblesDots = document.querySelectorAll(".bubbles__dot");
+const bubblesButton = document.querySelector(".bubbles__button-submit");
+
+bubblesButton.addEventListener("click", () => {
+  bubblesDotsWrap.classList.add("active");
+
+  // Удаляем класс "active" через 2 секунды
+  setTimeout(() => {
+    bubblesDotsWrap.classList.remove("active");
+  }, 300);
+
+  bubblesDots.forEach((dot, index) => {
+    if (index === 0) {
+      bubblesDotsWrap.removeChild(dot);
+      const newDot = document.createElement("div");
+      newDot.classList.add("bubbles__dot");
+      bubblesDotsWrap.append(newDot);
+    }
+  });
+});
