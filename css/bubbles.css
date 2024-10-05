@@ -688,4 +688,16 @@ input[type="number"] {
     height: 8px;
   }
 }
+@media screen and (max-width: 425px) {
+  .bubbles__dot {
+    width: 36px;
+    min-width: 36px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .bubbles__dot {
+    width: 35px;
+    min-width: 35px;
+  }
+}
 /*************/
