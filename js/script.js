@@ -739,7 +739,6 @@ const bubblesButton = document.querySelector(".bubbles__button-submit");
 bubblesButton.addEventListener("click", () => {
   bubblesDotsWrap.classList.add("active");
 
-  // Удаляем класс "active" через 2 секунды
   setTimeout(() => {
     bubblesDotsWrap.classList.remove("active");
   }, 300);
