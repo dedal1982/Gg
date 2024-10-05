@@ -425,6 +425,7 @@ input[type="number"] {
 .item.active .item-slide {
   width: 150px;
   height: 150px;
+  transition: all 0.3s ease-in-out;
 }
 .item.prev {
   z-index: 2;
@@ -480,11 +481,15 @@ input[type="number"] {
 .button-container .button:nth-child(2) {
   float: right;
 }
-.item.next .item-slide {
-  left: 37%;
+.item.next {
+  width: 74px;
+  height: 74px;
+  left: 314px;
 }
-.item.prev .item-slide {
-  left: 64%;
+.item.prev {
+  width: 74px;
+  height: 74px;
+  left: 116px;
 }
 .bubbles__box {
   display: flex;
