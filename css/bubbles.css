@@ -7,6 +7,11 @@
   display: flex;
   gap: 20px;
 }
+@media screen and (max-width: 960px) {
+  .bubbles__wrapper {
+    flex-direction: column-reverse;
+  }
+}
 .bubbles__sidebar {
   width: 350px;
   min-height: 500px;
@@ -19,6 +24,17 @@
   border: 1px solid rgb(128, 130, 255);
   background: #242347;
 }
+@media screen and (max-width: 1000px) {
+  .bubbles__sidebar {
+    min-height: fit-content;
+  }
+}
+@media screen and (max-width: 960px) {
+  .bubbles__sidebar {
+    width: 100%;
+  }
+}
+
 .bubbles__header {
   width: 100%;
   display: flex;
@@ -26,6 +42,11 @@
   justify-content: space-between;
   background: transparent;
   border-radius: inherit;
+}
+@media screen and (max-width: 960px) {
+  .bubbles__header {
+    order: 5;
+  }
 }
 .bubbles__header-name {
   display: flex;
@@ -74,6 +95,11 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media screen and (max-width: 960px) {
+  .bubbles__field {
+    gap: 10px;
+  }
 }
 .bubbles__field-name {
   font-size: 14px;
@@ -176,6 +202,11 @@ input[type="number"] {
   height: 15px;
   transform: rotate(90deg);
 }
+@media screen and (max-width: 960px) {
+  .bubbles__button-submit {
+    order: -1;
+  }
+}
 /*---bubbles__game---*/
 .bubbles__main {
   width: calc(100% - 370px);
@@ -187,6 +218,11 @@ input[type="number"] {
   border: 1px solid rgb(128, 130, 255);
   background: #242347;
   position: relative;
+}
+@media screen and (max-width: 960px) {
+  .bubbles__main {
+    width: 100%;
+  }
 }
 .bubbles__result {
   height: 88px;
@@ -222,6 +258,13 @@ input[type="number"] {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (max-width: 1000px) {
+  .bubbles__game-main {
+    width: 258px;
+    min-width: 258px;
+    height: 128px;
+  }
 }
 .bubbles__game_side {
   position: relative;
@@ -378,6 +421,13 @@ input[type="number"] {
   height: 75px;
   border-radius: 50%;
 }
+@media screen and (max-width: 1000px) {
+  .bubbles__unknown {
+    width: 44px;
+    height: 44px;
+    font-size: 35px;
+  }
+}
 /************************/
 .items {
   position: absolute;
@@ -392,11 +442,11 @@ input[type="number"] {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 250px;
-  height: 250px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   overflow: hidden;
-  transition: all 300ms ease-in-out;
+  transition: all 0.4s ease-in-out;
   z-index: -1;
   opacity: 0;
 }
@@ -407,6 +457,12 @@ input[type="number"] {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1000px) {
+  .item-slide {
+    width: 44px;
+    height: 44px;
+  }
 }
 .item img {
   width: 100%;
@@ -422,10 +478,22 @@ input[type="number"] {
   height: 150px;
   box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
 }
+@media screen and (max-width: 1000px) {
+  .item.active {
+    width: 102px;
+    height: 102px;
+  }
+}
 .item.active .item-slide {
   width: 150px;
   height: 150px;
   transition: all 0.4s ease-in-out;
+}
+@media screen and (max-width: 1000px) {
+  .item.active .item-slide {
+    width: 102px;
+    height: 102px;
+  }
 }
 .item.prev {
   z-index: 2;
@@ -486,10 +554,24 @@ input[type="number"] {
   height: 74px;
   left: 314px;
 }
+@media screen and (max-width: 1000px) {
+  .item.next {
+    width: 44px;
+    height: 44px;
+    left: 188px;
+  }
+}
 .item.prev {
   width: 74px;
   height: 74px;
   left: 116px;
+}
+@media screen and (max-width: 1000px) {
+  .item.prev {
+    width: 44px;
+    height: 44px;
+    left: 68px;
+  }
 }
 .bubbles__box {
   display: flex;
